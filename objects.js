@@ -1,10 +1,10 @@
 var playlist = {"Demi Lovato": "Warrior"};
 
-function updatePlaylist(obj,artist, song) {
-  return Object.assign({},obj,{ artist : song});
+function updatePlaylist(obj,artistName, song) {
+  return Object.assign({},obj,{ artistName : song});
 }
 
-function removeFromPlaylist (obj, artist) {
-  delete obj.artist;
+function removeFromPlaylist (obj, artistName) {
+  delete obj.artistName;
   return obj;
 }
